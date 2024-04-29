@@ -17,6 +17,8 @@ import h2 from "../public/HotelApp/h2.jpg";
 import h3 from "../public/HotelApp/h3.jpg";
 import h4 from "../public/HotelApp/h4.jpg";
 
+import db from "../public/db.jpg";
+
 import A1 from "../public/Attendance/A1.jpg";
 import A2 from "../public/Attendance/A2.jpg";
 import A3 from "../public/Attendance/A3.jpg";
@@ -147,6 +149,17 @@ export default function Home() {
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">React Native</p>
             </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
+              <Image
+                src={db}
+                width={150}
+                height={150}
+                className="rounded-full"
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">DataBase</h3>
+              <p className="py-2">Consistent and dynamic data</p>
+              <h1 className="py-4 text-teal-600 font-bold">MongoDB</h1>
+            </div>
           </div>
         </section>
         <section className="py-10">
@@ -234,7 +247,9 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className={`${darkMode && "text-white text-2xl font-bold"}`}>And many more</p>
+            <p className={`${darkMode && "text-white text-2xl font-bold"}`}>
+              And many more
+            </p>
           </div>
         </section>
       </main>
