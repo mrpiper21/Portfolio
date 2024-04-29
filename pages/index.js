@@ -233,6 +233,15 @@ export default function Home() {
                 width={"100%"}
                 height={200}
                 layout="responsive"
+                src={h1}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={200}
+                layout="responsive"
                 src={h3}
               />
             </div>
