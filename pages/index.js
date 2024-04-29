@@ -62,13 +62,13 @@ export default function Home() {
               Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Welcome to my portfolio website! I am Bernard, a passionate
-              software developer with a strong foundation in Data Structures and
-              Algorithms and a proven track record of building innovative and
-              user-friendly software solutions. I am also an experienced team
-              player and have a strong work ethic. I am confident that I can
-              help you build the software solutions that you need to achieve
-              your business goals.
+              Welcome to my portfolio website! My name is Bernard but you can
+              call me MrPiper. I passionate software developer with a strong
+              foundation in Data Structures and Algorithms and a proven track
+              record of building innovative and user-friendly software
+              solutions. I am also an experienced team player and have a strong
+              work ethic. I am confident that I can help you build the software
+              solutions that you need to achieve your business goals.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <AiFillTwitterCircle />
@@ -84,17 +84,17 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, Ive done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+              Since the beginning of my journey as a software developer I have
+              collaborated with talanted people to create digital products for
+              both business and consumer use.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              I offer from a wide range of services, including full fledge
+              website and mobile Application.
             </p>
+          </div>
+          <div className="items-center">
+            <h1>Tools</h1>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
