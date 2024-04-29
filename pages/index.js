@@ -22,9 +22,13 @@ import A3 from "../public/Attendance/A3.jpg";
 import A4 from "../public/Attendance/A4.jpg";
 import A5 from "../public/Attendance/A5.jpg";
 import A6 from "../public/Attendance/A6.jpg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const handleGitClick = () => {
+    window.location.href = "https://github.com/mrpiper21";
+  };
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -74,6 +78,9 @@ export default function Home() {
               <AiFillTwitterCircle />
               <AiFillLinkedin />
               <AiFillYoutube />
+              <div onClick={handleGitClick} className="p-2 bg-teal-400">
+                <p>GitHub</p>
+              </div>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} />
