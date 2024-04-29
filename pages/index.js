@@ -3,6 +3,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  FaGithub,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
@@ -28,6 +29,10 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const handleGitClick = () => {
     window.location.href = "https://github.com/mrpiper21";
+  };
+  const handleTwitClick = () => {
+    window.location.href =
+      "https://x.com/Benadpiper?t=FRY9VTzpbKNrN_rlRmu-HA&s=09";
   };
 
   return (
@@ -75,12 +80,9 @@ export default function Home() {
               solutions that you need to achieve your business goals.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
+              <AiFillTwitterCircle onClick={handleTwitClick} />
               <AiFillLinkedin />
-              <AiFillYoutube />
-              <div onClick={handleGitClick} className="p-2 bg-teal-400">
-                <p>GitHub</p>
-              </div>
+              <FaGithub onClick={handleGitClick} />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} />
@@ -163,7 +165,9 @@ export default function Home() {
 
           {/**Church app */}
           <div className="mt-10 items-center justify-center">
-            <p>Attendance App</p>
+            <p className={`${darkMode && "text-white text-2xl font-bold"}`}>
+              Attendance App
+            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
@@ -196,7 +200,9 @@ export default function Home() {
           </div>
           {/**Hotel App */}
           <div className="mt-10 items-center justify-center">
-            <p>Hote Booking App</p>
+            <p className={`${darkMode && "text-white text-2xl font-bold"}`}>
+              Hotel Booking App
+            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
@@ -226,6 +232,9 @@ export default function Home() {
                 src={h4}
               />
             </div>
+          </div>
+          <div>
+            <p className={`${darkMode && "text-white text-2xl font-bold"}`}>And many more</p>
           </div>
         </section>
       </main>
